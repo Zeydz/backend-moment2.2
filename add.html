@@ -61,7 +61,30 @@
         </div>
     </nav>
     <section class="home">
+        <h1 class="text">Lägg till arbetserfarenhet</h1>
+        <div class="form-center">
+            <form id="add-experience-form">
+                <label for="companyname">Företagsnamn:</label>
+                <input type="text" id="companyname" name="companyname" required><br>
 
+                <label for="jobtitle">Jobbtitel:</label>
+                <input type="text" id="jobtitle" name="jobtitle" required><br>
+
+                <label for="location">Plats:</label>
+                <input type="text" id="location" name="location" required><br>
+
+                <label for="startdate">Startdatum:</label>
+                <input type="date" id="startdate" name="startdate" required><br>
+
+                <label for="enddate">Slutdatum:</label>
+                <input type="date" id="enddate" name="enddate" required><br>
+
+                <label for="description">Beskrivning:</label>
+                <textarea id="description" name="description" required></textarea><br>
+
+                <button type="submit">Lägg till erfarenhet</button>
+            </form>
+        </div>
     </section>
     <script src="src/js/design.js" type="module"></script>
     <script src="src/js/main.js" type="module"></script>
