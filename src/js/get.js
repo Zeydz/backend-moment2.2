@@ -21,7 +21,15 @@ async function fetchWorkExperiences() {
         data.forEach(workExperience => {
             const listItem = document.createElement('li');
             listItem.textContent = `${workExperience.companyname} - ${workExperience.jobtitle}`;
+
+            const deleteButton = document.createElement('button');
+            deleteButton.textContent = 'Ta bort';
+            deleteButton.addEventListener('click', () => d)
+
+
+            listItem.appendChild(deleteButton);
             workExperiencesList.appendChild(listItem);
+
         })
 
     } catch (error) {
