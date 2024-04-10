@@ -6,6 +6,10 @@ body.dark {
   // Stil för startsidan i dark mode
   .home {
     background-color: variables.$dbody-color;
+    
+    p {
+      color: white;
+    }
 
     // Stil för texten på startsidan i dark mode
     .text {
@@ -71,12 +75,13 @@ body.dark {
 
   #work-experiences-list {
     color: white;
+    li {
+      border: solid 2px white;
+    }
   }
 }
-
 /* Animation så att allting flyter in vid besök */
 body {
-  transition: all 0.2s ease;
   height: 100vh;
   background-color: variables.$body-color;
 }

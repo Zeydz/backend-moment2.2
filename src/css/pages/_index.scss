@@ -8,6 +8,7 @@
   width: calc(100% - 250px);
   background-color: variables.$body-color;
   transition: all 0.5s ease;
+
   .text {
     font-size: 30px;
     font-weight: 500;
@@ -15,12 +16,13 @@
     padding: 23px 40px;
   }
 }
+
 #work-experiences-list {
   padding: 23px 40px;
   list-style: none;
 }
 
-.sidebar.close ~ .home {
+.sidebar.close~.home {
   left: 88px;
   width: calc(100% - 88px);
 }
@@ -32,6 +34,7 @@
   margin: 5em auto;
   transition-duration: 0.4s;
 }
+
 #map:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
@@ -72,14 +75,38 @@
     cursor: pointer;
     transition-duration: 0.4s;
   }
+
   #searchBtn:hover {
     background-color: variables.$dprimary-color;
     color: white;
   }
 }
+
 //Ändra storlek på input vid mindre enheter
 @media (max-width: 500px) {
   input {
     width: 200px !important;
+  }
+}
+
+#work-experiences-list {
+  font-size: 1.2em;
+  width: 80%;
+  margin: auto;
+
+  li {
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+    border: solid 2px black;
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  button {
+    display: block;
+    background-color: red;
+    border: 2px solid black;
+    margin: 20px auto;
   }
 }
