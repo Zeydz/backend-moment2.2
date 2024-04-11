@@ -9,3 +9,7 @@ Denna webbapplikation är en plattform för att hantera arbetslivserfarenheter. 
 - **Visa arbetslivserfarenheter**: En lista över befintliga arbetslivserfarenheter hämtas från API:et och visas för användaren. Varje arbetslivserfarenhet visas med detaljer som företagsnamn, jobbtitel, plats, startdatum, slutdatum och beskrivning.
 
 - **Ta bort arbetslivserfarenheter**: Användare har möjlighet att ta bort en specifik arbetslivserfarenhet från listan genom att trycka på en "Ta bort" -knapp bredvid varje post. När knappen trycks skickas en förfrågan till API:et för att ta bort den valda arbetslivserfarenheten från databasen.
+
+[API-länk](https://backend-moment2.onrender.com/api)  
+
+[Publicerad webbplats](https://astonishing-caramel-f0eafd.netlify.app/)
