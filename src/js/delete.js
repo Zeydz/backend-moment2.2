@@ -1,0 +1,20 @@
+"use strict";
+import { fetchWorkExperiences } from "./get";
+
+export async function deleteWorkExperience(workExperienceID) {
+    try {
+        const response = await fetch(`https://backend-moment2.onrender.com/api/work-experiences/${workExperienceID}`, {
+            method: 'DELETE'
+        });
+
+        if (!response.ok) {
+            const data = await response.json();
+            throw new Error(data.message) || 'Failed to delete work experience.';
+        }
+
+        fetchWorkExperiences();
+
+    } catch (error) {
+        console.error('Error deleting work experience: ' + error.message);
+    }
+}
