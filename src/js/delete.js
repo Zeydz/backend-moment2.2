@@ -1,6 +1,7 @@
 "use strict";
 import { fetchWorkExperiences } from "./get";
 
+/* Exporterar funktionen. Funktionen skickar DELETE till API med workExperienceID. */
 export async function deleteWorkExperience(workExperienceID) {
     try {
         const response = await fetch(`https://backend-moment2.onrender.com/api/work-experiences/${workExperienceID}`, {
