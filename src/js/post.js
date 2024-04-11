@@ -33,8 +33,7 @@ async function submitForm(event) {
         }
         alert('Formuläret har skickats!');
 
-
-    } catch {
+    } catch (error) {
         console.error('Error submitting form data: ', error.message);
         alert('Ett fel uppstod vid skickande av formuläret. Vänligen försök igen.');
 
